@@ -1,0 +1,35 @@
+{
+  "title": "BigMath",
+  "copyright": "Alexander Logger",
+  "packOptions": {
+    "summary": "Portable class library for computations with big numbers such as Int128, Int256 and BigInteger.",
+    "owners": [ "inTagger" ],
+    "tags": [
+      "Math",
+      "BigInteger",
+      "Int128",
+      "Int256",
+      "BitConverter"
+    ],
+    "projectUrl": "https://github.com/everbytes/BigMath",
+    "licenseUrl": "https://raw.githubusercontent.com/everbytes/BigMath/master/LICENSE.md",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/everbytes/BigMath"
+    }
+  },
+
+  "version": "0.5.1",
+  "description": "Portable class library for computations with big numbers such as Int128, Int256 and BigInteger.",
+  "authors": [ "Alexander Logger" ],
+
+
+  "supports": {},
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1"
+  },
+  "frameworks": {
+    "netstandard1.0": {}
+  }
+}
