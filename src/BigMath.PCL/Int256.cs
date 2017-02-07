@@ -1542,12 +1542,29 @@ namespace BigMath
         /// </returns>
         public static explicit operator ulong(Int256 value)
         {
-            if ((value < ushort.MinValue) || (value > ushort.MaxValue))
+            if ((value < ulong.MinValue) || (value > ulong.MaxValue))
             {
                 throw new OverflowException();
             }
 
             return value._d;
+        }
+
+        /// <summary>
+        ///     Performs an explicit conversion from <see cref="Int256" /> to <see cref="Int128" />.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <returns>
+        ///     The result of the conversion.
+        /// </returns>
+        public static explicit operator Int128(Int256 value)
+        {
+            if ((value < Int128.MinValue) || (value > Int128.MaxValue))
+            {
+                throw new OverflowException();
+            }
+			return new Int128(value);
+            //return value._d;
         }
 
         /// <summary>
